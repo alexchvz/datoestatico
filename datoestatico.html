@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dato Aleatorio</title>
+</head>
+<body>
+    <h1>Dato Flotante Aleatorio</h1>
+    <p id="datoAleatorio"></p>
+
+    <script>
+        // Función para generar un número flotante aleatorio
+        function generarDatoAleatorio() {
+            const datoAleatorio = Math.random() * 100; // Modifica el rango según tus necesidades
+            return datoAleatorio.toFixed(2); // Limita el número de decimales
+        }
+
+        // Mostrar el dato aleatorio en el elemento con el ID "datoAleatorio"
+        document.getElementById('datoAleatorio').innerText = `Dato Aleatorio: ${generarDatoAleatorio()}`;
+    </script>
+</body>
+</html>
